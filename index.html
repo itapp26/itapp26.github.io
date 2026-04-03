@@ -1,23 +1,106 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>itapp26 アプリ一覧</title>
-<style>
-body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
-h1 { color: #333; }
-ul { list-style-type: none; padding: 0; }
-li { margin-bottom: 10px; }
-a { color: #007acc; text-decoration: none; }
-a:hover { text-decoration: underline; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>itapp26 アプリ一覧</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      color: #111827;
+    }
+    h2 {
+      margin-top: 32px;
+      font-size: 1.25rem;
+      color: #111827;
+    }
+    p {
+      margin: 0 0 16px;
+    }
+    .lead {
+      color: #374151;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 16px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+    .app-title {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .app-title a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .app-title a:hover {
+      text-decoration: underline;
+    }
+    .links {
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+    .links a {
+      color: #2563eb;
+      text-decoration: none;
+      margin-right: 12px;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body>
-<h1>itapp26 アプリ一覧</h1>
-<p>当サイトでは、複数のアプリに関する情報、プライバシーポリシー、サポートページを提供しています。興味のあるアプリを以下から選んでください。</p>
-<ul>
-  <li><a href="food-expiry-app/index.html">食材期限メモ</a></li>
-  <li><a href="sample-app/index.html">サンプルアプリ（仮）</a></li>
-</ul>
+  <main class="container">
+    <h1>itapp26 アプリ一覧</h1>
+    <p class="lead">
+      個人開発のiPhoneアプリに関する情報を掲載しています。
+      各アプリの概要、サポートページ、プライバシーポリシーは以下からご確認ください。
+    </p>
+
+    <section class="card">
+      <p class="app-title">
+        <a href="food-expiry-app/index.html">食材期限メモ</a>
+      </p>
+      <p>
+        食材の賞味期限・消費期限をシンプルに記録し、一覧で確認できるアプリです。
+        日々の食材管理や食品ロス防止に役立ちます。
+      </p>
+      <div class="links">
+        <a href="food-expiry-app/index.html">アプリ概要</a>
+        <a href="food-expiry-app/support.html">サポート</a>
+        <a href="food-expiry-app/privacy.html">プライバシーポリシー</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>お問い合わせは各アプリのサポートページをご確認ください。</p>
+    </footer>
+  </main>
 </body>
 </html>
