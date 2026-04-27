@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サポート - 通院メモ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --line: #d9e2ec;
+      --accent: #2563eb;
+      --accent-soft: #e8f0ff;
+      --warn-soft: #fff7ed;
+      --warn-line: #fed7aa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
+
+    .page {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: 22px 18px 44px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+      font-size: 0.95rem;
+    }
+
+    header {
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 7vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 1.3rem;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 16px;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .notice {
+      background: var(--warn-soft);
+      border-color: var(--warn-line);
+    }
+
+    .faq-item {
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      margin-top: 14px;
+    }
+
+    .faq-item:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav aria-label="ページ移動">
+      <a href="index.html">トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+
+    <header>
+      <h1>通院メモ サポート</h1>
+      <p class="lead">
+        通院メモは、家族ごとの通院に関するメモを端末内に記録・整理するためのシンプルなアプリです。
+      </p>
+    </header>
+
+    <section>
+      <h2>主な使い方</h2>
+      <ol>
+        <li>初回起動時の確認画面を読み、「確認しました」をタップします。</li>
+        <li>記録したい家族を追加します。</li>
+        <li>家族を選び、通院記録を追加します。</li>
+        <li>通院日、病院名、診療科、支払額、メモ、次回予定日を必要に応じて入力します。</li>
+        <li>記録一覧や詳細画面から、内容の確認、編集、削除ができます。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>できること</h2>
+      <ul>
+        <li>家族ごとに通院記録を残すこと</li>
+        <li>通院日、病院名、診療科、支払額を記録すること</li>
+        <li>お薬に関するメモを残すこと</li>
+        <li>診察前に聞きたいことや自由メモを残すこと</li>
+        <li>次回予定日をメモとして残すこと</li>
+        <li>端末内に記録を保存すること</li>
+      </ul>
+    </section>
+
+    <section class="notice">
+      <h2>できないこと</h2>
+      <ul>
+        <li>医療上の判断を行うこと</li>
+        <li>病名や受診先について判断すること</li>
+        <li>薬の量や飲むタイミングを判断すること</li>
+        <li>税務上の判定を行うこと</li>
+        <li>記録を外部サービスへ送信すること</li>
+      </ul>
+      <p>
+        医療・薬・税務に関する判断は、医師、薬剤師、税理士、または公的機関にご確認ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>データはどこに保存されますか？</h3>
+        <p>
+          入力した通院記録は、お使いの端末内に保存されます。初回公開時点では、外部サーバーへの送信はありません。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>医療アドバイスはしてくれますか？</h3>
+        <p>
+          いいえ。本アプリは通院に関するメモを整理するためのアプリです。医療上の判断や助言は行いません。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>薬の飲み方を管理できますか？</h3>
+        <p>
+          薬に関するメモを残すことはできますが、薬の量や飲むタイミングを判断したり、飲むよう促したりする機能はありません。薬に関する判断は医師または薬剤師にご確認ください。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>医療費控除の判定はできますか？</h3>
+        <p>
+          いいえ。支払額をメモとして残すことはできますが、税務上の判定は行いません。必要に応じて税理士または公的機関にご確認ください。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>家族ごとに記録できますか？</h3>
+        <p>
+          はい。家族を追加し、家族ごとに通院記録を残せます。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>広告や課金はありますか？</h3>
+        <p>
+          初回公開時点では、広告や課金はありません。
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>お問い合わせ先</h2>
+      <p>
+        お問い合わせは、App Storeのサポート情報、または開発者が指定する連絡先からお願いします。
+      </p>
+      <p>
+        個別の医療・薬・税務に関する判断については、医師、薬剤師、税理士、または公的機関にご確認ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>プライバシーポリシー</h2>
+      <p>
+        データの扱いについては、<a href="privacy.html">プライバシーポリシー</a>をご確認ください。
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 通院メモ</p>
+    </footer>
+  </main>
+</body>
+</html>
